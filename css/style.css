@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Inter:wght@200&display=swap");
+* {
+  font-family: "coiny";
+}
+a {
+  text-decoration: none;
+  text-transform: none;
+  color: white;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.site {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+/*---------------------------------*/
+/*---------------------------------*/
+.container div {
+  margin-top: 5em;
+}
+.container div span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 10vh;
+  margin-bottom: 10px;
+  background: rgba(151, 151, 151, 0.3);
+  border: solid 5px #78b5dd;
+  border-radius: 20px;
+}
+.container div span:hover {
+  background: rgba(235, 235, 235, 0.3);
+}
+.container div span img {
+  margin-right: 1em;
+}
+/*---------------------------------*/
+/*-------------PAG Home------------*/
+/*---------------------------------*/
+.topo {
+  display: flex;
+  height: 5vh;
+  align-items: center;
+  background-color: #181a0c;
+  padding: 8px;
+  border-bottom: solid 1px gold;
+  position: relative;
+  bottom: 20px;
+  z-index: -2;
+  color: white;
+}
+.topo p {
+  margin-left: 1em;
+}
+.topo div {
+  border: 1px solid gold;
+  width: 60px;
+  padding: 5px;
+  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topo div p {
+  margin-left: 5px;
+}
+/*-------------------------------*/
+/*------------SUB MENU-----------*/
+/*-------------------------------*/
+.sub-um {
+  display: flex;
+  margin: 10px;
+}
+.sub-dois {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  position: relative;
+  bottom: 20px;
+}
+.add {
+  position: relative;
+  bottom: 10px;
+  margin: 10px;
+  color: white;
+  width: 250px;
+  height: 70px;
+  border: solid 1px gold;
+  border-radius: 10px;
+}
+.add p {
+  margin: 5px;
+}
+.popUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a6414;
+  border: 1px solid gold;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+.popUp:hover {
+  background-color: #0bb51f;
+}
+
+/*------------Roleta-----------*/
+.roleta img {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+/*------------Roleta-----------*/
+
+/*-------------------------------*/
+/*---------------LOGO------------*/
+/*-------------------------------*/
+.logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 50px;
+}
+.logo img {
+  width: 150px;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 30px;
+  }
+}
+/*-------------------------------*/
+/*---------------GAME------------*/
+/*-------------------------------*/
+.games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*---------------container-----------*/
+.cont-1 {
+  display: flex;
+}
+.cont-1 div {
+  cursor: pointer;
+  display: flex;
+  padding: 1px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+.cont-1 div:hover {
+  border: 1px solid gold;
+}
+
+.cont-1 div span {
+  color: white;
+  max-resolution: 2px;
+  font-size: 11px;
+}
+.cont-1 div span :nth-child(2) {
+  font-size: 8px;
+  color: #0a6414;
+}
+.cont-1 div img {
+  padding: 10px;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+/*-------------------------------*/
+/*--------------Contato----------*/
+/*-------------------------------*/
+.contato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.contato div {
+  display: flex;
+  align-items: center;
+  background-color: #40427f;
+  border-radius: 10px;
+  width: 100px;
+  font-size: 12px;
+  padding: 5px;
+}
+.contato div:hover {
+  background-color: #6567ac;
+  border: 1px solid gold;
+}
+.contato div p {
+  margin: 10px;
+  color: white;
+}
+
+.config {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.config-popUp {
+  display: flex;
+  background-color: #32620d;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.config-popUp:hover {
+  background-color: #0e961e;
+}
+.config-popUp img {
+  padding: 25px;
+}
+/*-------------------------------*/
+/*-----------RESPONSIVO----------*/
+/*-------------------------------*/
+@media (max-width: 800px) {
+  .topo div {
+    width: 74px;
+    padding: 1px;
+    margin-left: 29px;
+  }
+  .topo p {
+    margin-left: 1em;
+    font-size: 8px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 109px;
+}
+.logo img {
+  width: 80px;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+.cont-1 div img {
+  padding: 10px;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+}
+.games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-84px);
+  flex-direction: column;
+}
+.contato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -92px;
+}
+.contato div {
+  display: flex;
+  align-items: center;
+  background-color: #40427f;
+  border-radius: 10px;
+  width: 84px;
+  font-size: 12px;
+  padding: 0px;
+}
+.config {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -37px;
+}
+.cont-1 {
+  display: flex;
+  margin-top: -15px;
+}
+.config {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5px;
+  margin-bottom: 0px !important;
+}
+.config-popUp img {
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+}
+.config-popUp {
+  display: flex;
+  background-color: #32620d;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+}
